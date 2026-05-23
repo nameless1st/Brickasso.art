@@ -327,55 +327,59 @@
   'BRK-10': {
     label:'The Perfection',
     salt:'Zx4@Lm9!qT2#vHcP',
-    hash:'d90752c4f9cce97fd7cfc51b43318c365fa0a6e797fbf22c0e8f2a8d02b3b4f7'
+    hash:'15201e3463a9944490f8c48823e3c05ecc42f8fbc45eb00fed2a414b285a4e86'
   }
 };
 
-    document.getElementById('verifyForm').addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const v = normalizeCode(document.getElementById('verifyInput').value);
-      const msg = document.getElementById('verifyMsg');
-      msg.style.display='block';
-      msg.style.padding='10px';
-      msg.style.borderRadius='8px';
+document.getElementById('verifyForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
 
-      if(!/^BRK-10-[A-Z0-9]{6}$/.test(v)){
-        msg.style.color='#721c24';
-        msg.style.background='#f8d7da';
-        msg.style.border='1px solid #f5c6cb';
-        msg.textContent='⚠️ Invalid format. Use BRK-10-XXXXXX.';
-        return;
-      }
+  const v = normalizeCode(document.getElementById('verifyInput').value);
+  const msg = document.getElementById('verifyMsg');
 
-      const prefix = v.slice(0,6);
-      const entry = REGISTRY[prefix];
+  msg.style.display='block';
+  msg.style.padding='10px';
+  msg.style.borderRadius='8px';
 
-      if(!entry){
-        msg.style.color='#721c24';
-        msg.style.background='#f8d7da';
-        msg.style.border='1px solid #f5c6cb';
-        msg.textContent='⚠️ Unknown registry number.';
-        return;
-      }
+  if(!/^BRK-10-[A-Z0-9]{6}$/.test(v)){
+    msg.style.color='#721c24';
+    msg.style.background='#f8d7da';
+    msg.style.border='1px solid #f5c6cb';
+    msg.textContent='⚠️ Invalid format. Use BRK-10-XXXXXX.';
+    return;
+  }
 
-      try{
-        const ok = (await sha256Hex(entry.salt + v)) === entry.hash;
-        if(ok){
-          msg.style.color='#155724';
-          msg.style.background='#d4edda';
-          msg.style.border='1px solid #c3e6cb';
-          msg.textContent = `✅ Verified: This code matches the official registry entry. (${entry.label})`;
-        } else {
-          msg.style.color='#721c24';
-          msg.style.background='#f8d7da';
-          msg.style.border='1px solid #f5c6cb';
-          msg.textContent = '⚠️ Invalid code. Please check the certificate and try again.';
-        }
-      }catch(err){
-        msg.style.color='#721c24';
-        msg.style.background='#fff3cd';
-        msg.style.border='1px solid #ffeeba';
-        msg.textContent = 'Temporary error validating the code.';
+  const prefix = v.substring(0, v.lastIndexOf('-'));
+  const entry = REGISTRY[prefix];
+
+  if(!entry){
+    msg.style.color='#721c24';
+    msg.style.background='#f8d7da';
+    msg.style.border='1px solid #f5c6cb';
+    msg.textContent='⚠️ Unknown registry number.';
+    return;
+  }
+
+  try{
+    const ok = (await sha256Hex(entry.salt + v)) === entry.hash;
+
+    if(ok){
+      msg.style.color='#155724';
+      msg.style.background='#d4edda';
+      msg.style.border='1px solid #c3e6cb';
+      msg.textContent=`✅ Verified: This code matches the official registry entry. (${entry.label})`;
+    } else {
+      msg.style.color='#721c24';
+      msg.style.background='#f8d7da';
+      msg.style.border='1px solid #f5c6cb';
+      msg.textContent='⚠️ Invalid code. Please check the certificate and try again.';
+    }
+
+  } catch(err){
+    msg.style.color='#721c24';
+    msg.style.background='#fff3cd';
+    msg.style.border='1px solid #ffeeba';
+    msg.textContent='Temporary error validating the code.';
       }
     });
   </script>
