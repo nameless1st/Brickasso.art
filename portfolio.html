@@ -325,7 +325,7 @@
 
         .press-list {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
             gap: 10px;
             margin-top: 10px;
         }
@@ -432,7 +432,8 @@
 
         @media (max-width: 900px) {
             .grid,
-            .video-grid {
+            .video-grid,
+            .press-list {
                 grid-template-columns: 1fr;
             }
         }
@@ -551,45 +552,100 @@
             <section class="card full">
                 <h2>Featured Videos</h2>
                 <div class="video-grid">
-
                     <div class="video-card">
                         <div class="video-embed">
-                            <iframe src="https://www.youtube.com/embed/HAbKj5Ep2iE" 
-                                    title="Romania's Got Talent official YouTube video with Albert Oprea Brickasso" 
+                            <iframe src="https://www.youtube.com/embed/ANYsxnhbH3A" 
+                                    title="Finala Românii au Talent 2026, Albert Oprea Brickasso" 
                                     loading="lazy" 
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                     referrerpolicy="strict-origin-when-cross-origin"
                                     allowfullscreen></iframe>
                         </div>
                         <div class="video-body">
-                            <p class="video-title">Semifinal Romania's Got Talent, official YouTube</p>
+                            <p class="video-title">Finala Românii au Talent 2026, momentul Brickasso de pe scena PRO TV</p>
+                            <div class="cta-row">
+                                <a class="cta secondary" href="https://www.youtube.com/watch?v=ANYsxnhbH3A" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="video-card">
+                        <div class="video-embed">
+                            <iframe src="https://www.youtube.com/embed/nSKWYwI-NQI" 
+                                    title="Brilliant la TVR Info, interviu cu Albert Oprea" 
+                                    loading="lazy" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class="video-body">
+                            <p class="video-title">Brilliant la TVR Info, interviu despre artă, LEGO® și povestea Brickasso</p>
+                            <div class="cta-row">
+                                <a class="cta secondary" href="https://www.youtube.com/watch?v=nSKWYwI-NQI" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="video-card">
+                        <div class="video-embed">
+                            <iframe src="https://www.youtube.com/embed/rH60hb9VrJA" 
+                                    title="Vernisaj la Palatul Principilor din Alba Iulia" 
+                                    loading="lazy" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class="video-body">
+                            <p class="video-title">Interviu la vernisajul Brickasso de la Palatul Principilor din Alba Iulia</p>
+                            <div class="cta-row">
+                                <a class="cta secondary" href="https://www.youtube.com/watch?v=rH60hb9VrJA" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="video-card">
+                        <div class="video-embed">
+                            <iframe src="https://www.youtube.com/embed/HAbKj5Ep2iE" 
+                                    title="Semifinala Românii au Talent, Albert Oprea Brickasso" 
+                                    loading="lazy" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class="video-body">
+                            <p class="video-title">Semifinala Românii au Talent, official YouTube</p>
                             <div class="cta-row">
                                 <a class="cta secondary" href="https://www.youtube.com/watch?v=HAbKj5Ep2iE" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
                             </div>
                         </div>
                     </div>
-                    
+
+
                     <div class="video-card">
                         <div class="video-embed">
                             <iframe src="https://www.youtube.com/embed/xEG9uFg86uk" 
-                                    title="Romania's Got Talent official YouTube video" 
+                                    title="Audiții Românii au Talent, Albert Oprea Brickasso" 
                                     loading="lazy" 
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                     referrerpolicy="strict-origin-when-cross-origin"
                                     allowfullscreen></iframe>
                         </div>
                         <div class="video-body">
-                            <p class="video-title">Auditions Romania's Got Talent, official YouTube</p>
+                            <p class="video-title">Audiții Românii au Talent, official YouTube</p>
                             <div class="cta-row">
                                 <a class="cta secondary" href="https://www.youtube.com/watch?v=xEG9uFg86uk" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
                             </div>
                         </div>
                     </div>
-                    
+
+
                     <div class="video-card">
                         <div class="video-embed">
                             <iframe src="https://www.youtube.com/embed/p53dj7eOsKo" 
-                                    title="Euronews Romania video report about Brickasso" 
+                                    title="Euronews Romania, video report about Brickasso" 
                                     loading="lazy" 
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                     referrerpolicy="strict-origin-when-cross-origin"
@@ -603,10 +659,11 @@
                         </div>
                     </div>
 
+
                     <div class="video-card">
                         <div class="video-embed">
                             <iframe src="https://www.youtube.com/embed/jODquZy1xqM" 
-                                    title="Albert Oprea, the Wonder Child from Romania's Got Talent, Vorbeste Lumea PRO TV" 
+                                    title="Albert Oprea la Vorbește Lumea PRO TV" 
                                     loading="lazy" 
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                     referrerpolicy="strict-origin-when-cross-origin"
@@ -620,6 +677,7 @@
                         </div>
                     </div>
 
+
                 </div>
             </section>
 
@@ -627,38 +685,167 @@
                 <h2>Press</h2>
                 <p class="meta">Selected coverage and official pages.</p>
                 <div class="press-list">
+                    <a class="press-item" href="https://www.protv.ro/emisiuni/romanii-au-talent/articol/127506-finala-romanii-au-talent-29-mai-2026-albert-oprea" target="_blank" rel="noopener noreferrer">
+                        <div class="badge">PRO</div>
+                        <div class="press-text">
+                            <p class="press-title">PRO TV, finala Românii au Talent 2026</p>
+                            <p class="press-desc">Pagina oficială PRO TV despre finala Românii au Talent și momentul lui Albert Oprea.</p>
+                        </div>
+                    </a>
+
+
+                    <a class="press-item" href="https://hotnews.ro/albert-oprea-finala-romanii-au-talent-lego-nadia-comaneci-2241131" target="_blank" rel="noopener noreferrer">
+                        <div class="badge">HN</div>
+                        <div class="press-text">
+                            <p class="press-title">HotNews.ro</p>
+                            <p class="press-desc">Articol despre Albert Oprea în finala Românii au Talent, cu lucrarea dedicată Nadiei Comăneci.</p>
+                        </div>
+                    </a>
+
+
+                    <a class="press-item" href="http://www.tvr.ro/tvrinfo/sunt-singurul-copil-din-lume-care-face-arta-din-piese-lego-albert-oprea-brilliantul-saptamanii-la-tvr-info_55354.html" target="_blank" rel="noopener noreferrer">
+                        <div class="badge">TVR</div>
+                        <div class="press-text">
+                            <p class="press-title">TVR Info, Brilliantul săptămânii</p>
+                            <p class="press-desc">Interviu TVR Info despre Albert Oprea, Brickasso® și arta realizată din piese LEGO®.</p>
+                        </div>
+                    </a>
+
+
+                    <a class="press-item" href="https://www.gsp.ro/sporturi/altele/nadia-comaneci-copil-scena-sports-festival-948399.html" target="_blank" rel="noopener noreferrer">
+                        <div class="badge">GSP</div>
+                        <div class="press-text">
+                            <p class="press-title">Gazeta Sporturilor, Nadia Comăneci la Sports Festival</p>
+                            <p class="press-desc">Articol despre momentul de pe scenă cu Nadia Comăneci la Sports Festival.</p>
+                        </div>
+                    </a>
+
+
+                    <a class="press-item" href="https://www.sport.ro/stiri/nadia-comaneci-miscata-de-un-numar-la-romanii-au-talent-m-ai-emotionat-draga-albert.html" target="_blank" rel="noopener noreferrer">
+                        <div class="badge">SP</div>
+                        <div class="press-text">
+                            <p class="press-title">Sport.ro</p>
+                            <p class="press-desc">Articol despre reacția Nadiei Comăneci la momentul Brickasso® de la Românii au Talent.</p>
+                        </div>
+                    </a>
+
+
+                    <a class="press-item" href="https://www.prosport.ro/diverse/nadia-comaneci-reactie-numar-romanii-au-talent-10-perfect-20436083" target="_blank" rel="noopener noreferrer">
+                        <div class="badge">PS</div>
+                        <div class="press-text">
+                            <p class="press-title">ProSport</p>
+                            <p class="press-desc">Articol despre reacția Nadiei Comăneci și lucrarea Brickasso® inspirată de nota 10.</p>
+                        </div>
+                    </a>
+
+
+                    <a class="press-item" href="https://www.fanatik.ro/nadia-comaneci-i-a-dat-10-reactie-fabuloasa-la-momentul-difuzat-de-pro-tv-m-ai-emotionat-21467440" target="_blank" rel="noopener noreferrer">
+                        <div class="badge">FAN</div>
+                        <div class="press-text">
+                            <p class="press-title">Fanatik</p>
+                            <p class="press-desc">Articol despre reacția Nadiei Comăneci la momentul difuzat de PRO TV.</p>
+                        </div>
+                    </a>
+
+
+                    <a class="press-item" href="https://click.ro/primetime/albert-oprea-copilul-care-a-facut-portretul-2536636.html" target="_blank" rel="noopener noreferrer">
+                        <div class="badge">CLK</div>
+                        <div class="press-text">
+                            <p class="press-title">Click!</p>
+                            <p class="press-desc">Articol despre Albert Oprea și portretul realizat din piese LEGO®.</p>
+                        </div>
+                    </a>
+
+
+                    <a class="press-item" href="https://cluj24.ro/exclusiv-albert-clujeanul-de-11-ani-finalist-la-romanii-au-talent-promite-un-moment-unic-vreau-sa-aduc-trofeul-acasa-292215.html" target="_blank" rel="noopener noreferrer">
+                        <div class="badge">CJ24</div>
+                        <div class="press-text">
+                            <p class="press-title">Cluj24.ro, înainte de finală</p>
+                            <p class="press-desc">Interviu cu Albert Oprea înainte de finala Românii au Talent.</p>
+                        </div>
+                    </a>
+
+
+                    <a class="press-item" href="https://www.wowbiz.ro/cine-este-albert-oprea-finalistul-de-la-romanii-au-talent-2026-concurentul-isi-doreste-sa-devina-un-artist-recunoscut-la-nivel-mondial-20554777" target="_blank" rel="noopener noreferrer">
+                        <div class="badge">WOW</div>
+                        <div class="press-text">
+                            <p class="press-title">WOWbiz.ro</p>
+                            <p class="press-desc">Profil despre Albert Oprea, finalist Românii au Talent 2026.</p>
+                        </div>
+                    </a>
+
+
+                    <a class="press-item" href="https://www.cancan.ro/florin-piersic-mesaj-public-pentru-albert-oprea-dupa-ce-finalistul-i-a-facut-portretul-din-piese-lego-pe-scena-romanii-au-talent-21439974" target="_blank" rel="noopener noreferrer">
+                        <div class="badge">CAN</div>
+                        <div class="press-text">
+                            <p class="press-title">Cancan.ro</p>
+                            <p class="press-desc">Articol despre mesajul public transmis de Florin Piersic pentru Albert Oprea.</p>
+                        </div>
+                    </a>
+
+
+                    <a class="press-item" href="https://www.stiridecluj.ro/divertisment/video-ce-moment-genial-a-facut-albert-un-elev-de-doar-11-ani-din-cluj-aseara-la-romanii-au-talent-micul-brickasso-a-luat-locul-2" target="_blank" rel="noopener noreferrer">
+                        <div class="badge">CJ</div>
+                        <div class="press-text">
+                            <p class="press-title">Știri de Cluj</p>
+                            <p class="press-desc">Articol despre momentul din finală și locul 2 obținut de Albert Oprea.</p>
+                        </div>
+                    </a>
+
+
+                    <a class="press-item" href="https://www.botosaneanul.ro/botosaniul-are-un-copil-minune-in-finala-romanii-au-talent-albert-oprea-a-uimit-juriul-cu-tablouri-spectaculoase-din-lego" target="_blank" rel="noopener noreferrer">
+                        <div class="badge">BT</div>
+                        <div class="press-text">
+                            <p class="press-title">Botoșăneanul</p>
+                            <p class="press-desc">Articol despre Albert Oprea, finalist la Românii au Talent, și legătura cu Botoșani.</p>
+                        </div>
+                    </a>
+
+
+                    <a class="press-item" href="https://perfecte.md/lifestyle/albert-oprea-a-facut-senzatie-la-romanii-au-talent-cu-un-portret-lego-al-lui-florin-piersic-pe-ce-loc-s-a-clasat-baiatul-in-marea-finala-video---2759578.html" target="_blank" rel="noopener noreferrer">
+                        <div class="badge">PF</div>
+                        <div class="press-text">
+                            <p class="press-title">Perfecte.md</p>
+                            <p class="press-desc">Articol despre portretul LEGO® al lui Florin Piersic și rezultatul din finală.</p>
+                        </div>
+                    </a>
+
+
+                    <a class="press-item" href="https://romania24.ro/video-tablouri-unicat-din-mii-de-piese-lego-prezentate-la-alba-iulia-de-albert-oprea-dupa-participarea-la-romanii-au-talent-748534.html" target="_blank" rel="noopener noreferrer">
+                        <div class="badge">RO24</div>
+                        <div class="press-text">
+                            <p class="press-title">Romania24.ro</p>
+                            <p class="press-desc">Articol despre expoziția Brickasso® de la Palatul Principilor din Alba Iulia.</p>
+                        </div>
+                    </a>
+
+
+                    <a class="press-item" href="https://cluj24.ro/video-elevul-clujean-albert-finalist-la-romanii-au-talent-a-emotionat-o-pe-nadia-comaneci-cu-un-portret-lego-al-gimnastei-290346.html" target="_blank" rel="noopener noreferrer">
+                        <div class="badge">CJ24</div>
+                        <div class="press-text">
+                            <p class="press-title">Cluj24.ro, Nadia Comăneci</p>
+                            <p class="press-desc">Articol despre portretul LEGO® dedicat Nadiei Comăneci.</p>
+                        </div>
+                    </a>
+
 
                     <a class="press-item" href="https://www.protv.ro/emisiuni/romanii-au-talent/articol/126577-romanii-au-talent-8-mai-2026-prima-semifinala-live-albert-oprea" target="_blank" rel="noopener noreferrer">
                         <div class="badge">PRO</div>
                         <div class="press-text">
-                        <p class="press-title">PRO TV, semifinal live</p>
-                        <p class="press-desc">Official PRO TV coverage from the live semifinal of Romania's Got Talent.</p>
-                    </div>
-                </a>
-                
-                <a class="press-item" href="https://hotnews.ro/albert-oprea-finala-romanii-au-talent-lego-nadia-comaneci-2241131" target="_blank" rel="noopener noreferrer">
-                    <div class="badge">HN</div>
-                    <div class="press-text">
-                        <p class="press-title">HotNews.ro</p>
-                        <p class="press-desc">Article about Albert Oprea reaching the final with his LEGO® artwork dedicated to Nadia Comăneci.</p>
-                    </div>
-                </a>
-                
-                <a class="press-item" href="https://click.ro/primetime/un-copil-a-facut-o-pe-nadia-comaneci-din-piese-2528449.html" target="_blank" rel="noopener noreferrer">
-                    <div class="badge">CLK</div>
-                    <div class="press-text">
-                        <p class="press-title">Click!</p>
-                        <p class="press-desc">Press coverage about the LEGO® artwork inspired by Nadia Comăneci.</p>
-                    </div>
-                </a>
-                    
+                            <p class="press-title">PRO TV, semifinala live</p>
+                            <p class="press-desc">Official PRO TV coverage from the live semifinal of Romania's Got Talent.</p>
+                        </div>
+                    </a>
+
+
                     <a class="press-item" href="https://www.protv.ro/emisiuni/romanii-au-talent/articol/121914-romanii-au-talent-23-ianuarie-2026-albert-oprea-a-ridicat-juriul-in-picioare-si-a-primit-ropote-de-aplauze-cu-un-talent-unic-in-lume-a-transformat-piesele-lego-in-arta-pura-si-a-dus-totul-la-un-alt-nivel-cand-ai-ridicat-tabloul-mi-ai-dat-la-temelie" target="_blank" rel="noopener noreferrer">
                         <div class="badge">PRO</div>
                         <div class="press-text">
-                            <p class="press-title">PRO TV, article</p>
+                            <p class="press-title">PRO TV, audiții</p>
                             <p class="press-desc">Official PRO TV story page about Albert Oprea and his LEGO® art.</p>
                         </div>
                     </a>
+
 
                     <a class="press-item" href="https://www.protv.ro/emisiuni/romanii-au-talent/clip/67713-romanii-au-talent-23-ianuarie-2026-albert-oprea-a-facut-din-piese-lego-un-chip-perfect-a-dus-arta-la-un-nou-nivel" target="_blank" rel="noopener noreferrer">
                         <div class="badge">PRO</div>
@@ -668,6 +855,7 @@
                         </div>
                     </a>
 
+
                     <a class="press-item" href="https://www.euronews.ro/articole/lego-la-nivel-de-arta-povestea-copilului-din-cluj-care-la-11-ani-creeaza-lucrari" target="_blank" rel="noopener noreferrer">
                         <div class="badge">EU</div>
                         <div class="press-text">
@@ -676,13 +864,15 @@
                         </div>
                     </a>
 
+
                     <a class="press-item" href="https://www.stiridecluj.ro/social/video-strainii-sunt-la-picioarele-lui-brickasso-un-pusti-minune-din-cluj-napoca-micul-artist-a-uimit-pe-toata-lumea-cu-operele-sale-din-piese-lego" target="_blank" rel="noopener noreferrer">
                         <div class="badge">CJ</div>
                         <div class="press-text">
-                            <p class="press-title">Știri de Cluj</p>
+                            <p class="press-title">Știri de Cluj, profil Brickasso®</p>
                             <p class="press-desc">Video feature and local coverage.</p>
                         </div>
                     </a>
+
 
                     <a class="press-item" href="https://pozitivesti.ro/brickasso-copilul-din-cluj-care-transforma-piesele-lego-in-arta-la-11-ani-cucereste-deja-publicul-international/" target="_blank" rel="noopener noreferrer">
                         <div class="badge">RO</div>
@@ -692,6 +882,7 @@
                         </div>
                     </a>
 
+
                     <a class="press-item" href="https://clujenii.ro/foto-video-un-pusti-de-10-ani-din-cluj-napoca-face-magie-cu-piesele-lego-brickasso-creeaza-adevarate-opere-de-arta/" target="_blank" rel="noopener noreferrer">
                         <div class="badge">CLJ</div>
                         <div class="press-text">
@@ -699,6 +890,7 @@
                             <p class="press-desc">Photo and video coverage.</p>
                         </div>
                     </a>
+
 
                     <a class="press-item" href="https://iloveyoucluj.ro/cultura/brickasso-copil-minune-cluj-arta-lego" target="_blank" rel="noopener noreferrer">
                         <div class="badge">IL</div>
@@ -708,6 +900,7 @@
                         </div>
                     </a>
 
+
                     <a class="press-item" href="https://stiridelaialomita.ro/categorie/social/albert-copilul-minune-din-cluj-napoca-care-creeaza-opere-de-arta-din-piese-lego" target="_blank" rel="noopener noreferrer">
                         <div class="badge">RO</div>
                         <div class="press-text">
@@ -715,6 +908,7 @@
                             <p class="press-desc">Story about Albert Oprea and his LEGO® artworks.</p>
                         </div>
                     </a>
+
 
                     <a class="press-item" href="https://www.rd.nl/artikel/1137256-tienjarige-albert-schildert-met-lego-en-droomt-van-internationale-kunstbeurs" target="_blank" rel="noopener noreferrer">
                         <div class="badge">NL</div>
@@ -724,6 +918,7 @@
                         </div>
                     </a>
 
+
                     <a class="press-item" href="https://www.gamestar.de/artikel/10-jahre-alt-lego-kunstwerke,3445830.html" target="_blank" rel="noopener noreferrer">
                         <div class="badge">DE</div>
                         <div class="press-text">
@@ -732,13 +927,15 @@
                         </div>
                     </a>
 
+
                     <a class="press-item" href="https://cluj24.ro/foto-la-10-ani-transforma-lego-in-arta-de-galerie-povestea-lui-albert-clujeanul-care-a-impresionat-scena-romanii-au-talent-277076.html" target="_blank" rel="noopener noreferrer">
                         <div class="badge">CJ24</div>
                         <div class="press-text">
-                            <p class="press-title">Cluj24.ro</p>
+                            <p class="press-title">Cluj24.ro, profil foto</p>
                             <p class="press-desc">Photo feature about Albert's LEGO® art.</p>
                         </div>
                     </a>
+
 
                 </div>
 
