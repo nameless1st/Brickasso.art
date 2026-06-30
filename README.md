@@ -1,2 +1,0 @@
-# BRICKASSO
-Original Lego Art
