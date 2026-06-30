@@ -1,0 +1,23 @@
+/* TEAM */
+Project: Brickasso® Official Website
+Artist: Albert Oprea
+Website: https://brickasso.art/
+Social: https://www.instagram.com/brickasso.official
+Social: https://www.tiktok.com/@brickasso.art
+Social: https://www.youtube.com/@brickasso.official
+Social: https://x.com/brickasso_art
+
+/* SITE */
+Purpose: Permanent digital archive of the Brickasso® artistic practice.
+Language: English
+Standards: HTML, CSS, Schema.org, Open Graph, Twitter Cards, XML Sitemap, Web App Manifest
+Main sections: Home, Gallery, About, Portfolio, Catalogue, Certificate, Contact
+Catalogue principle: Chronological archive. BRK numbers are permanent and are not reused.
+
+/* ARTISTIC PRACTICE */
+Brickasso® artworks are original one of one artworks built through LEGO® elements.
+The website documents concept, chronology, authenticity, provenance context, hidden narratives, sculptural relief and artistic evolution.
+
+/* COPYRIGHT */
+© Albert Oprea. All rights reserved.
+LEGO® is a trademark of the LEGO Group, which does not sponsor, authorize or endorse Brickasso® artworks.

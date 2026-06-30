@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://brickasso.art/sitemap.xml
+Sitemap: https://brickasso.art/sitemap-image.xml
+
+# Official AI context file
+# https://brickasso.art/llms.txt
