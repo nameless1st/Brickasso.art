@@ -1,0 +1,239 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://brickasso.art/#website",
+      "name": "Brickasso®",
+      "url": "https://brickasso.art/",
+      "description": "Official website of Brickasso®, the contemporary artistic practice of Albert Oprea.",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://brickasso.art/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://brickasso.art/#organization",
+      "name": "Brickasso®",
+      "url": "https://brickasso.art/",
+      "logo": "https://brickasso.art/logo.png",
+      "image": "https://brickasso.art/preview-social.jpg",
+      "sameAs": [
+        "https://www.instagram.com/brickasso.official",
+        "https://www.tiktok.com/@brickasso.art",
+        "https://www.youtube.com/@brickasso.official",
+        "https://x.com/brickasso_art"
+      ],
+      "founder": {
+        "@id": "https://brickasso.art/#albert-oprea"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://brickasso.art/#albert-oprea",
+      "name": "Albert Oprea",
+      "url": "https://brickasso.art/about.html",
+      "sameAs": [
+        "https://www.instagram.com/brickasso.official",
+        "https://www.tiktok.com/@brickasso.art",
+        "https://www.youtube.com/@brickasso.official",
+        "https://x.com/brickasso_art"
+      ],
+      "creatorOf": [
+        {
+          "@id": "https://brickasso.art/#organization"
+        },
+        {
+          "@id": "https://brickasso.art/catalogue.html#catalogue"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://brickasso.art/catalogue.html#catalogue",
+      "name": "Official Brickasso® Catalogue",
+      "url": "https://brickasso.art/catalogue.html",
+      "description": "The official chronological archive of Brickasso® artworks.",
+      "about": {
+        "@id": "https://brickasso.art/#organization"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.art/white-horse.html#artwork",
+      "identifier": "BRK-01",
+      "name": "White Horse",
+      "creator": {
+        "@id": "https://brickasso.art/#albert-oprea"
+      },
+      "artform": "Contemporary art",
+      "artMedium": "LEGO® elements",
+      "url": "https://brickasso.art/white-horse.html",
+      "description": "The first documented Brickasso® artwork.",
+      "isPartOf": {
+        "@id": "https://brickasso.art/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.art/pepsi02.html#artwork",
+      "identifier": "BRK-02",
+      "name": "Pepsi",
+      "creator": {
+        "@id": "https://brickasso.art/#albert-oprea"
+      },
+      "artform": "Contemporary art",
+      "artMedium": "LEGO® elements",
+      "url": "https://brickasso.art/pepsi02.html",
+      "description": "An original Brickasso® artwork documented in the official catalogue.",
+      "isPartOf": {
+        "@id": "https://brickasso.art/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.art/afghan-girl.html#artwork",
+      "identifier": "BRK-03",
+      "name": "Afghan Girl",
+      "creator": {
+        "@id": "https://brickasso.art/#albert-oprea"
+      },
+      "artform": "Contemporary art",
+      "artMedium": "LEGO® elements",
+      "url": "https://brickasso.art/afghan-girl.html",
+      "description": "A documented Brickasso® artwork based on licensed visual reference.",
+      "isPartOf": {
+        "@id": "https://brickasso.art/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.art/black-horse.html#artwork",
+      "identifier": "BRK-04",
+      "name": "Black Horse",
+      "creator": {
+        "@id": "https://brickasso.art/#albert-oprea"
+      },
+      "artform": "Contemporary art",
+      "artMedium": "LEGO® elements",
+      "url": "https://brickasso.art/black-horse.html",
+      "description": "An original Brickasso® artwork documented in the official catalogue.",
+      "isPartOf": {
+        "@id": "https://brickasso.art/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.art/david-beckham.html#artwork",
+      "identifier": "BRK-05",
+      "name": "David Beckham",
+      "creator": {
+        "@id": "https://brickasso.art/#albert-oprea"
+      },
+      "artform": "Contemporary art",
+      "artMedium": "LEGO® elements",
+      "url": "https://brickasso.art/david-beckham.html",
+      "description": "An original Brickasso® artwork documented in the official catalogue.",
+      "isPartOf": {
+        "@id": "https://brickasso.art/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.art/ballerina.html#artwork",
+      "identifier": "BRK-06",
+      "name": "Ballerina",
+      "creator": {
+        "@id": "https://brickasso.art/#albert-oprea"
+      },
+      "artform": "Contemporary art",
+      "artMedium": "LEGO® elements",
+      "url": "https://brickasso.art/ballerina.html",
+      "description": "An original Brickasso® artwork documented in the official catalogue.",
+      "isPartOf": {
+        "@id": "https://brickasso.art/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.art/happysun.html#artwork",
+      "identifier": "BRK-08",
+      "name": "Happy Sun",
+      "creator": {
+        "@id": "https://brickasso.art/#albert-oprea"
+      },
+      "artform": "Contemporary art",
+      "artMedium": "LEGO® elements",
+      "url": "https://brickasso.art/happysun.html",
+      "description": "An original Brickasso® artwork documented in the official catalogue.",
+      "isPartOf": {
+        "@id": "https://brickasso.art/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.art/piersic.html#artwork",
+      "identifier": "BRK-09",
+      "name": "Florin Piersic",
+      "creator": {
+        "@id": "https://brickasso.art/#albert-oprea"
+      },
+      "artform": "Contemporary art",
+      "artMedium": "LEGO® elements",
+      "url": "https://brickasso.art/piersic.html",
+      "description": "An original Brickasso® artwork presented in the final of Românii au Talent.",
+      "isPartOf": {
+        "@id": "https://brickasso.art/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.art/comaneci.html#artwork",
+      "identifier": "BRK-10",
+      "name": "The Perfection",
+      "creator": {
+        "@id": "https://brickasso.art/#albert-oprea"
+      },
+      "artform": "Contemporary art",
+      "artMedium": "LEGO® elements",
+      "url": "https://brickasso.art/comaneci.html",
+      "description": "An original Brickasso® artwork connected with Nadia Comăneci.",
+      "isPartOf": {
+        "@id": "https://brickasso.art/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.art/brk13.html#artwork",
+      "identifier": "BRK-13",
+      "name": "Champion's Blade",
+      "creator": {
+        "@id": "https://brickasso.art/#albert-oprea"
+      },
+      "artform": "Contemporary art",
+      "artMedium": "LEGO® elements",
+      "url": "https://brickasso.art/brk13.html",
+      "description": "An original Brickasso® artwork connected with Ana Maria Brânză.",
+      "isPartOf": {
+        "@id": "https://brickasso.art/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.art/kosmos.html#artwork",
+      "identifier": "BRK-14",
+      "name": "Kosmos",
+      "creator": {
+        "@id": "https://brickasso.art/#albert-oprea"
+      },
+      "artform": "Contemporary art",
+      "artMedium": "LEGO® elements",
+      "url": "https://brickasso.art/kosmos.html",
+      "description": "An original commissioned Brickasso® artwork documented in the official catalogue.",
+      "isPartOf": {
+        "@id": "https://brickasso.art/catalogue.html#catalogue"
+      }
+    }
+  ]
+}
