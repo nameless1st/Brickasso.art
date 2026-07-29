@@ -96,6 +96,17 @@
         "knowsAbout": ["contemporary art", "LEGO® elements", "one of one artworks", "hidden narratives", "BRK catalogue", "visual composition", "sculptural relief", "certificate of authenticity"],
         "award": "Romania's Got Talent 2026 finalist, second place",
         "description": "Albert Oprea is the artist behind Brickasso®, a personal artistic practice documented through original one of one artworks, public appearances, media coverage and a permanent BRK catalogue.",
+        "subjectOf": [
+          {
+            "@type": "NewsArticle",
+            "headline": "Albert Oprea: Brickasso. LEGO Is How I Build My Own Path",
+            "url": "https://www.forbes.ro/albert-oprea-brickasso-lego-este-modul-prin-care-imi-construiesc-drumul-513024",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Forbes România"
+            }
+          }
+        ],
         "sameAs": [
           "https://www.instagram.com/brickasso.official",
           "https://www.tiktok.com/@brickasso.art",
@@ -242,6 +253,48 @@
     .media-body{padding:24px 24px 26px;}
     .media-body h3{margin:0 0 10px;font-family:'Cormorant Garamond',serif;font-size:1.9rem;line-height:1;letter-spacing:-0.035em;font-weight:600;}
     .media-body p{margin:0 0 18px;font-size:0.94rem;line-height:1.7;color:var(--text);}
+
+    .press-feature{
+      margin:0 0 34px;
+      padding:42px 40px;
+      background:var(--paper-soft);
+      box-shadow:0 22px 60px rgba(0,0,0,0.08);
+      text-align:left;
+      border-left:4px solid #151515;
+    }
+    .press-feature .press-label{
+      display:block;
+      margin-bottom:14px;
+      font-size:0.68rem;
+      letter-spacing:0.20em;
+      text-transform:uppercase;
+      font-weight:700;
+      color:var(--muted);
+    }
+    .press-feature h3{
+      margin:0 0 16px;
+      font-family:'Cormorant Garamond',serif;
+      font-size:clamp(2.4rem,4vw,4rem);
+      line-height:0.96;
+      letter-spacing:-0.04em;
+      font-weight:600;
+      color:#151515;
+    }
+    .press-feature p{
+      margin:0 0 26px;
+      max-width:780px;
+      font-size:1rem;
+      line-height:1.78;
+      color:var(--text);
+    }
+    .press-subtitle{
+      margin:38px 0 18px;
+      font-size:0.72rem;
+      letter-spacing:0.20em;
+      text-transform:uppercase;
+      font-weight:700;
+      color:var(--muted);
+    }
     .press-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
     .press-item{display:block;background:var(--paper-soft);padding:20px 20px 22px;box-shadow:0 18px 50px rgba(0,0,0,0.045);transition:transform .25s ease;}
     .press-item:hover{transform:translateY(-4px);}
@@ -297,6 +350,8 @@
       .footer-social{gap:18px;}
       .footer-social img{width:46px;height:46px;}
       .footer-links{gap:14px;}
+      .press-feature{padding:30px 24px;}
+
     }
       .press-item small{display:block;margin-top:7px;font-size:0.88rem;line-height:1.45;color:var(--text);font-weight:500;opacity:0.82;}
     .fact-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px;}
@@ -442,35 +497,45 @@
             <h2>Press and media</h2>
             <p>Selected coverage documents the public context around Albert Oprea and the Brickasso<span class="reg">®</span> body of work.</p>
           </div>
+
+          <article class="press-feature">
+            <span class="press-label">Featured article</span>
+            <h3>Forbes România</h3>
+            <p><em>Albert Oprea: Brickasso®. LEGO® Is How I Build My Own Path.</em> An in-depth interview about Albert's creative journey, the origins of Brickasso®, the artistic process and the long-term direction of the project.</p>
+            <a href="https://www.forbes.ro/albert-oprea-brickasso-lego-este-modul-prin-care-imi-construiesc-drumul-513024" target="_blank" rel="noopener noreferrer" class="button">Read Article</a>
+          </article>
+
+          <div class="press-subtitle">Other press coverage</div>
+
           <div class="press-list">
-            <a class="press-item" href="https://www.protv.ro/emisiuni/romanii-au-talent/articol/127506-finala-romanii-au-talent-29-mai-2026-albert-oprea" target="_blank" rel="noopener noreferrer"><span>PRO</span><strong>PRO TV, finala Românii au Talent 2026</strong><small>Pagina oficială PRO TV despre finala Românii au Talent și momentul lui Albert Oprea.</small></a>
-            <a class="press-item" href="https://hotnews.ro/albert-oprea-finala-romanii-au-talent-lego-nadia-comaneci-2241131" target="_blank" rel="noopener noreferrer"><span>HN</span><strong>HotNews.ro</strong><small>Articol despre Albert Oprea în finala Românii au Talent, cu lucrarea dedicată Nadiei Comăneci.</small></a>
-            <a class="press-item" href="http://www.tvr.ro/sunt-singurul-copil-din-lume-care-face-arta-din-piese-lego-albert-oprea-brilliantul-saptamanii-la-tvr-info_55354.html" target="_blank" rel="noopener noreferrer"><span>TVR</span><strong>TVR Info, Brilliantul săptămânii</strong><small>Interviu TVR Info despre Albert Oprea, Brickasso® și arta realizată din piese LEGO®.</small></a>
-            <a class="press-item" href="https://www.gsp.ro/sporturi/altele/nadia-comaneci-copil-scena-sports-festival-948399.html" target="_blank" rel="noopener noreferrer"><span>GSP</span><strong>Gazeta Sporturilor, Nadia Comăneci la Sports Festival</strong><small>Articol despre momentul de pe scenă cu Nadia Comăneci la Sports Festival.</small></a>
-            <a class="press-item" href="https://www.sport.ro/stiri/nadia-comaneci-miscata-de-un-numar-la-romanii-au-talent-m-ai-emotionat-draga-albert.html" target="_blank" rel="noopener noreferrer"><span>SP</span><strong>Sport.ro</strong><small>Articol despre reacția Nadiei Comăneci la momentul Brickasso® de la Românii au Talent.</small></a>
-            <a class="press-item" href="https://www.prosport.ro/diverse/nadia-comaneci-reactie-numar-romanii-au-talent-10-perfect-20436083" target="_blank" rel="noopener noreferrer"><span>PS</span><strong>ProSport</strong><small>Articol despre reacția Nadiei Comăneci și lucrarea Brickasso® inspirată de nota 10.</small></a>
-            <a class="press-item" href="https://www.fanatik.ro/nadia-comaneci-i-a-dat-10-reactie-fabuloasa-la-momentul-difuzat-de-pro-tv-m-ai-emotionat-21467440" target="_blank" rel="noopener noreferrer"><span>FAN</span><strong>Fanatik</strong><small>Articol despre reacția Nadiei Comăneci la momentul difuzat de PRO TV.</small></a>
-            <a class="press-item" href="https://click.ro/primetime/albert-oprea-copilul-care-a-facut-portretul-2536636.html" target="_blank" rel="noopener noreferrer"><span>CLK</span><strong>Click!</strong><small>Articol despre Albert Oprea și portretul realizat din piese LEGO®.</small></a>
-            <a class="press-item" href="https://cluj24.ro/exclusiv-albert-clujeanul-de-11-ani-finalist-la-romanii-au-talent-promite-un-moment-unic-vreau-sa-aduc-trofeul-acasa-292215.html" target="_blank" rel="noopener noreferrer"><span>CJ24</span><strong>Cluj24.ro, înainte de finală</strong><small>Interviu cu Albert Oprea înainte de finala Românii au Talent.</small></a>
-            <a class="press-item" href="https://www.wowbiz.ro/cine-este-albert-oprea-finalistul-de-la-romanii-au-talent-2026-concurentul-isi-doreste-sa-devina-un-artist-recunoscut-la-nivel-mondial-20554777" target="_blank" rel="noopener noreferrer"><span>WOW</span><strong>WOWbiz.ro</strong><small>Profil despre Albert Oprea, finalist Românii au Talent 2026.</small></a>
-            <a class="press-item" href="https://www.cancan.ro/florin-piersic-mesaj-public-pentru-albert-oprea-dupa-ce-finalistul-i-a-facut-portretul-din-piese-lego-pe-scena-romanii-au-talent-21439974" target="_blank" rel="noopener noreferrer"><span>CAN</span><strong>Cancan.ro</strong><small>Articol despre mesajul public transmis de Florin Piersic pentru Albert Oprea.</small></a>
-            <a class="press-item" href="https://www.stiridecluj.ro/divertisment/video-ce-moment-genial-a-facut-albert-un-elev-de-doar-11-ani-din-cluj-aseara-la-romanii-au-talent-micul-brickasso-a-luat-locul-2" target="_blank" rel="noopener noreferrer"><span>CJ</span><strong>Știri de Cluj</strong><small>Articol despre momentul din finală și locul 2 obținut de Albert Oprea.</small></a>
-            <a class="press-item" href="https://www.botosaneanul.ro/botosaniul-are-un-copil-minune-in-finala-romanii-au-talent-albert-oprea-a-uimit-juriul-cu-tablouri-spectaculoase-din-lego" target="_blank" rel="noopener noreferrer"><span>BT</span><strong>Botoșăneanul</strong><small>Articol despre Albert Oprea, finalist la Românii au Talent, și legătura cu Botoșani.</small></a>
-            <a class="press-item" href="https://perfecte.md/lifestyle/albert-oprea-a-facut-senzatie-la-romanii-au-talent-cu-un-portret-lego-al-lui-florin-piersic-pe-ce-loc-s-a-clasat-baiatul-in-marea-finala-video---2759578.html" target="_blank" rel="noopener noreferrer"><span>PF</span><strong>Perfecte.md</strong><small>Articol despre portretul LEGO® al lui Florin Piersic și rezultatul din finală.</small></a>
-            <a class="press-item" href="https://romania24.ro/video-tablouri-unicat-din-mii-de-piese-lego-prezentate-la-alba-iulia-de-albert-oprea-dupa-participarea-la-romanii-au-talent-748534.html" target="_blank" rel="noopener noreferrer"><span>RO24</span><strong>Romania24.ro</strong><small>Articol despre expoziția Brickasso® de la Palatul Principilor din Alba Iulia.</small></a>
-            <a class="press-item" href="https://cluj24.ro/video-elevul-clujean-albert-finalist-la-romanii-au-talent-a-emotionat-o-pe-nadia-comaneci-cu-un-portret-lego-al-gimnastei-290346.html" target="_blank" rel="noopener noreferrer"><span>CJ24</span><strong>Cluj24.ro, Nadia Comăneci</strong><small>Articol despre portretul LEGO® dedicat Nadiei Comăneci.</small></a>
-            <a class="press-item" href="https://www.protv.ro/emisiuni/romanii-au-talent/articol/126577-romanii-au-talent-8-mai-2026-prima-semifinala-live-albert-oprea" target="_blank" rel="noopener noreferrer"><span>PRO</span><strong>PRO TV, semifinala live</strong><small>Official PRO TV coverage from the live semifinal of Romania's Got Talent.</small></a>
-            <a class="press-item" href="https://www.protv.ro/emisiuni/romanii-au-talent/articol/121914-romanii-au-talent-23-ianuarie-2026-albert-oprea-a-ridicat-juriul-in-picioare-si-a-primit-ropote-de-aplauze-cu-un-talent-unic-in-lume-a-transformat-piesele-lego-in-arta-pura-si-a-dus-totul-la-un-alt-nivel-cand-ai-ridicat-tabloul-mi-ai-dat-la-temelie" target="_blank" rel="noopener noreferrer"><span>PRO</span><strong>PRO TV, audiții</strong><small>Official PRO TV story page about Albert Oprea and his LEGO® art.</small></a>
-            <a class="press-item" href="https://www.protv.ro/emisiuni/romanii-au-talent/clip/67713-romanii-au-talent-23-ianuarie-2026-albert-oprea-a-facut-din-piese-lego-un-chip-perfect-a-dus-arta-la-un-nou-nivel" target="_blank" rel="noopener noreferrer"><span>PRO</span><strong>PRO TV, clip page</strong><small>Official PRO TV clip page.</small></a>
-            <a class="press-item" href="https://www.euronews.ro/articole/lego-la-nivel-de-arta-povestea-copilului-din-cluj-care-la-11-ani-creeaza-lucrari" target="_blank" rel="noopener noreferrer"><span>EU</span><strong>Euronews Romania</strong><small>Written feature about LEGO® as art and Albert's creative process.</small></a>
-            <a class="press-item" href="https://www.stiridecluj.ro/social/video-strainii-sunt-la-picioarele-lui-brickasso-un-pusti-minune-din-cluj-napoca-micul-artist-a-uimit-pe-toata-lumea-cu-operele-sale-din-piese-lego" target="_blank" rel="noopener noreferrer"><span>CJ</span><strong>Știri de Cluj, profil Brickasso®</strong><small>Video feature and local coverage.</small></a>
-            <a class="press-item" href="https://pozitivesti.ro/brickasso-copilul-din-cluj-care-transforma-piesele-lego-in-arta-la-11-ani-cucereste-deja-publicul-international/" target="_blank" rel="noopener noreferrer"><span>RO</span><strong>Pozitivești</strong><small>Article about the Brickasso® journey.</small></a>
-            <a class="press-item" href="https://clujenii.ro/foto-video-un-pusti-de-10-ani-din-cluj-napoca-face-magie-cu-piesele-lego-brickasso-creeaza-adevarate-opere-de-arta/" target="_blank" rel="noopener noreferrer"><span>CLJ</span><strong>Clujenii.ro</strong><small>Photo and video coverage.</small></a>
-            <a class="press-item" href="https://iloveyoucluj.ro/cultura/brickasso-copil-minune-cluj-arta-lego" target="_blank" rel="noopener noreferrer"><span>IL</span><strong>iLoveYouCluj</strong><small>Article about Brickasso® and the artistic journey.</small></a>
-            <a class="press-item" href="https://stiridelaialomita.ro/categorie/social/albert-copilul-minune-din-cluj-napoca-care-creeaza-opere-de-arta-din-piese-lego" target="_blank" rel="noopener noreferrer"><span>RO</span><strong>Regional press</strong><small>Story about Albert Oprea and his LEGO® artworks.</small></a>
-            <a class="press-item" href="https://www.rd.nl/artikel/1137256-tienjarige-albert-schildert-met-lego-en-droomt-van-internationale-kunstbeurs" target="_blank" rel="noopener noreferrer"><span>NL</span><strong>Reformatorisch Dagblad</strong><small>Dutch press feature about Brickasso®.</small></a>
-            <a class="press-item" href="https://www.gamestar.de/artikel/10-jahre-alt-lego-kunstwerke,3445830.html" target="_blank" rel="noopener noreferrer"><span>DE</span><strong>GameStar</strong><small>German media coverage.</small></a>
-            <a class="press-item" href="https://cluj24.ro/foto-la-10-ani-transforma-lego-in-arta-de-galerie-povestea-lui-albert-clujeanul-care-a-impresionat-scena-romanii-au-talent-277076.html" target="_blank" rel="noopener noreferrer"><span>CJ24</span><strong>Cluj24.ro, profil foto</strong><small>Photo feature about Albert's LEGO® art.</small></a>
+            <a class="press-item" href="https://www.protv.ro/emisiuni/romanii-au-talent/articol/127506-finala-romanii-au-talent-29-mai-2026-albert-oprea" target="_blank" rel="noopener noreferrer"><span>PRO</span><strong>PRO TV, Romania's Got Talent 2026 Final</strong><small>Official PRO TV coverage of the final and Albert Oprea's live performance.</small></a>
+            <a class="press-item" href="https://hotnews.ro/albert-oprea-finala-romanii-au-talent-lego-nadia-comaneci-2241131" target="_blank" rel="noopener noreferrer"><span>HN</span><strong>HotNews.ro</strong><small>Coverage of Albert Oprea reaching the final with the artwork dedicated to Nadia Comăneci.</small></a>
+            <a class="press-item" href="http://www.tvr.ro/sunt-singurul-copil-din-lume-care-face-arta-din-piese-lego-albert-oprea-brilliantul-saptamanii-la-tvr-info_55354.html" target="_blank" rel="noopener noreferrer"><span>TVR</span><strong>TVR Info, Brilliant of the Week</strong><small>An interview about Albert Oprea, Brickasso® and the artistic use of LEGO® elements.</small></a>
+            <a class="press-item" href="https://www.gsp.ro/sporturi/altele/nadia-comaneci-copil-scena-sports-festival-948399.html" target="_blank" rel="noopener noreferrer"><span>GSP</span><strong>Gazeta Sporturilor, Sports Festival</strong><small>Coverage of Albert's stage appearance with Nadia Comăneci at Sports Festival.</small></a>
+            <a class="press-item" href="https://www.sport.ro/stiri/nadia-comaneci-miscata-de-un-numar-la-romanii-au-talent-m-ai-emotionat-draga-albert.html" target="_blank" rel="noopener noreferrer"><span>SP</span><strong>Sport.ro</strong><small>Coverage of Nadia Comăneci's reaction to Albert's Brickasso® performance.</small></a>
+            <a class="press-item" href="https://www.prosport.ro/diverse/nadia-comaneci-reactie-numar-romanii-au-talent-10-perfect-20436083" target="_blank" rel="noopener noreferrer"><span>PS</span><strong>ProSport</strong><small>An article about Nadia Comăneci's response and the Brickasso® artwork inspired by the perfect 10.</small></a>
+            <a class="press-item" href="https://www.fanatik.ro/nadia-comaneci-i-a-dat-10-reactie-fabuloasa-la-momentul-difuzat-de-pro-tv-m-ai-emotionat-21467440" target="_blank" rel="noopener noreferrer"><span>FAN</span><strong>Fanatik</strong><small>Coverage of Nadia Comăneci's reaction to the performance broadcast by PRO TV.</small></a>
+            <a class="press-item" href="https://click.ro/primetime/albert-oprea-copilul-care-a-facut-portretul-2536636.html" target="_blank" rel="noopener noreferrer"><span>CLK</span><strong>Click!</strong><small>A profile of Albert Oprea and the portrait he created from LEGO® elements.</small></a>
+            <a class="press-item" href="https://cluj24.ro/exclusiv-albert-clujeanul-de-11-ani-finalist-la-romanii-au-talent-promite-un-moment-unic-vreau-sa-aduc-trofeul-acasa-292215.html" target="_blank" rel="noopener noreferrer"><span>CJ24</span><strong>Cluj24.ro, Before the Final</strong><small>An interview with Albert Oprea before the Romania's Got Talent final.</small></a>
+            <a class="press-item" href="https://www.wowbiz.ro/cine-este-albert-oprea-finalistul-de-la-romanii-au-talent-2026-concurentul-isi-doreste-sa-devina-un-artist-recunoscut-la-nivel-mondial-20554777" target="_blank" rel="noopener noreferrer"><span>WOW</span><strong>WOWbiz.ro</strong><small>A profile of Albert Oprea as a Romania's Got Talent 2026 finalist.</small></a>
+            <a class="press-item" href="https://www.cancan.ro/florin-piersic-mesaj-public-pentru-albert-oprea-dupa-ce-finalistul-i-a-facut-portretul-din-piese-lego-pe-scena-romanii-au-talent-21439974" target="_blank" rel="noopener noreferrer"><span>CAN</span><strong>Cancan.ro</strong><small>Coverage of Florin Piersic's public message to Albert Oprea.</small></a>
+            <a class="press-item" href="https://www.stiridecluj.ro/divertisment/video-ce-moment-genial-a-facut-albert-un-elev-de-doar-11-ani-din-cluj-aseara-la-romanii-au-talent-micul-brickasso-a-luat-locul-2" target="_blank" rel="noopener noreferrer"><span>CJ</span><strong>Știri de Cluj</strong><small>Coverage of Albert's final performance and his second-place result.</small></a>
+            <a class="press-item" href="https://www.botosaneanul.ro/botosaniul-are-un-copil-minune-in-finala-romanii-au-talent-albert-oprea-a-uimit-juriul-cu-tablouri-spectaculoase-din-lego" target="_blank" rel="noopener noreferrer"><span>BT</span><strong>Botoșăneanul</strong><small>A feature about Albert Oprea, his place in the final and his family connection to Botoșani.</small></a>
+            <a class="press-item" href="https://perfecte.md/lifestyle/albert-oprea-a-facut-senzatie-la-romanii-au-talent-cu-un-portret-lego-al-lui-florin-piersic-pe-ce-loc-s-a-clasat-baiatul-in-marea-finala-video---2759578.html" target="_blank" rel="noopener noreferrer"><span>PF</span><strong>Perfecte.md</strong><small>Coverage of the Florin Piersic portrait and Albert's result in the grand final.</small></a>
+            <a class="press-item" href="https://romania24.ro/video-tablouri-unicat-din-mii-de-piese-lego-prezentate-la-alba-iulia-de-albert-oprea-dupa-participarea-la-romanii-au-talent-748534.html" target="_blank" rel="noopener noreferrer"><span>RO24</span><strong>Romania24.ro</strong><small>Coverage of the Brickasso® exhibition at Palatul Principilor in Alba Iulia.</small></a>
+            <a class="press-item" href="https://cluj24.ro/video-elevul-clujean-albert-finalist-la-romanii-au-talent-a-emotionat-o-pe-nadia-comaneci-cu-un-portret-lego-al-gimnastei-290346.html" target="_blank" rel="noopener noreferrer"><span>CJ24</span><strong>Cluj24.ro, Nadia Comăneci</strong><small>Coverage of the LEGO® portrait dedicated to Nadia Comăneci.</small></a>
+            <a class="press-item" href="https://www.protv.ro/emisiuni/romanii-au-talent/articol/126577-romanii-au-talent-8-mai-2026-prima-semifinala-live-albert-oprea" target="_blank" rel="noopener noreferrer"><span>PRO</span><strong>PRO TV, Live Semifinal</strong><small>Official PRO TV coverage from the live semifinal of Romania's Got Talent.</small></a>
+            <a class="press-item" href="https://www.protv.ro/emisiuni/romanii-au-talent/articol/121914-romanii-au-talent-23-ianuarie-2026-albert-oprea-a-ridicat-juriul-in-picioare-si-a-primit-ropote-de-aplauze-cu-un-talent-unic-in-lume-a-transformat-piesele-lego-in-arta-pura-si-a-dus-totul-la-un-alt-nivel-cand-ai-ridicat-tabloul-mi-ai-dat-la-temelie" target="_blank" rel="noopener noreferrer"><span>PRO</span><strong>PRO TV, Auditions</strong><small>Official PRO TV story about Albert Oprea's audition and the first national presentation of Brickasso®.</small></a>
+            <a class="press-item" href="https://www.protv.ro/emisiuni/romanii-au-talent/clip/67713-romanii-au-talent-23-ianuarie-2026-albert-oprea-a-facut-din-piese-lego-un-chip-perfect-a-dus-arta-la-un-nou-nivel" target="_blank" rel="noopener noreferrer"><span>PRO</span><strong>PRO TV, Audition Video</strong><small>Official PRO TV video page documenting Albert's audition performance.</small></a>
+            <a class="press-item" href="https://www.euronews.ro/articole/lego-la-nivel-de-arta-povestea-copilului-din-cluj-care-la-11-ani-creeaza-lucrari" target="_blank" rel="noopener noreferrer"><span>EU</span><strong>Euronews Romania</strong><small>A written feature about LEGO® as an artistic medium and Albert's creative process.</small></a>
+            <a class="press-item" href="https://www.stiridecluj.ro/social/video-strainii-sunt-la-picioarele-lui-brickasso-un-pusti-minune-din-cluj-napoca-micul-artist-a-uimit-pe-toata-lumea-cu-operele-sale-din-piese-lego" target="_blank" rel="noopener noreferrer"><span>CJ</span><strong>Știri de Cluj, Brickasso® Profile</strong><small>A video feature about Albert's work and the growing international audience around Brickasso®.</small></a>
+            <a class="press-item" href="https://pozitivesti.ro/brickasso-copilul-din-cluj-care-transforma-piesele-lego-in-arta-la-11-ani-cucereste-deja-publicul-international/" target="_blank" rel="noopener noreferrer"><span>RO</span><strong>Pozitivești</strong><small>A profile of the Brickasso® journey and Albert's developing international audience.</small></a>
+            <a class="press-item" href="https://clujenii.ro/foto-video-un-pusti-de-10-ani-din-cluj-napoca-face-magie-cu-piesele-lego-brickasso-creeaza-adevarate-opere-de-arta/" target="_blank" rel="noopener noreferrer"><span>CLJ</span><strong>Clujenii.ro</strong><small>Photo and video coverage of Albert's early Brickasso® artworks.</small></a>
+            <a class="press-item" href="https://iloveyoucluj.ro/cultura/brickasso-copil-minune-cluj-arta-lego" target="_blank" rel="noopener noreferrer"><span>IL</span><strong>iLoveYouCluj</strong><small>A cultural feature about Brickasso® and Albert's artistic journey.</small></a>
+            <a class="press-item" href="https://stiridelaialomita.ro/categorie/social/albert-copilul-minune-din-cluj-napoca-care-creeaza-opere-de-arta-din-piese-lego" target="_blank" rel="noopener noreferrer"><span>RO</span><strong>Regional Press</strong><small>A regional feature about Albert Oprea and his artworks created from LEGO® elements.</small></a>
+            <a class="press-item" href="https://www.rd.nl/artikel/1137256-tienjarige-albert-schildert-met-lego-en-droomt-van-internationale-kunstbeurs" target="_blank" rel="noopener noreferrer"><span>NL</span><strong>Reformatorisch Dagblad</strong><small>A Dutch press feature about Albert, Brickasso® and his ambition to exhibit internationally.</small></a>
+            <a class="press-item" href="https://www.gamestar.de/artikel/10-jahre-alt-lego-kunstwerke,3445830.html" target="_blank" rel="noopener noreferrer"><span>DE</span><strong>GameStar</strong><small>German media coverage of Albert's LEGO® artworks and creative process.</small></a>
+            <a class="press-item" href="https://cluj24.ro/foto-la-10-ani-transforma-lego-in-arta-de-galerie-povestea-lui-albert-clujeanul-care-a-impresionat-scena-romanii-au-talent-277076.html" target="_blank" rel="noopener noreferrer"><span>CJ24</span><strong>Cluj24.ro, Photo Profile</strong><small>A photo feature about Albert's early work and his appearance on Romania's Got Talent.</small></a>
           </div>
         </section>
 
