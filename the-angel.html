@@ -619,16 +619,25 @@
     (function initializeReferralForm() {
       const params = new URLSearchParams(window.location.search);
       const ref = (params.get("ref") || "").trim();
-      const query = ref ? "?ref=" + encodeURIComponent(ref) : "";
+
+      const formParams = new URLSearchParams();
+      formParams.set("site", "en");
+      formParams.set("lang", "en");
+
+      if (ref) {
+        formParams.set("ref", ref);
+      }
+
+      const formUrl = APPS_SCRIPT_WEB_APP_URL + "?" + formParams.toString();
       const iframe = document.getElementById("referralForm");
       const mobileLink = document.getElementById("openReferralForm");
 
       if (iframe) {
-        iframe.src = APPS_SCRIPT_WEB_APP_URL + query;
+        iframe.src = formUrl;
       }
 
       if (mobileLink) {
-        mobileLink.href = APPS_SCRIPT_WEB_APP_URL + query;
+        mobileLink.href = formUrl;
       }
     })();
   </script>
