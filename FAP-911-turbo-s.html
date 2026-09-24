@@ -318,7 +318,7 @@
         <div><small>Price</small><strong>€1,000</strong></div>
       </div>
 
-      <form class="acquire-form" id="acquireForm" action="https://formspree.io/f/xpwjdaaw" method="POST">
+      <form class="acquire-form" id="acquireForm" action="https://brickasso.ro/api/send-order.php" method="POST">
         <input type="text" name="name" placeholder="Your name" autocomplete="name" required>
         <input type="email" name="email" placeholder="Your email" autocomplete="email" required>
         <input type="text" name="country" placeholder="Country" autocomplete="country-name" required>
@@ -402,11 +402,11 @@
           acquireForm.reset();
         }else{
           acquireStatus.className = "form-status error";
-          acquireStatus.textContent = "Something went wrong. Please try again or email contact@brickasso.ro.";
+          acquireStatus.textContent = "Something went wrong. Please try again or email orders@brickasso.ro.";
         }
       }catch(error){
         acquireStatus.className = "form-status error";
-        acquireStatus.textContent = "Network error. Please email contact@brickasso.ro.";
+        acquireStatus.textContent = "Network error. Please email orders@brickasso.ro.";
       }finally{
         acquireBtn.disabled = false;
       }
