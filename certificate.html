@@ -122,7 +122,8 @@
         "mainEntity": [
           { "@type": "Question", "name": "What is the BRK Registry?", "acceptedAnswer": { "@type": "Answer", "text": "The BRK Registry is the official documentation system for registered Brickasso® artworks. It records artwork identity, supports provenance and connects the physical certificate to private verification." } },
           { "@type": "Question", "name": "Why is the full BRK code private?", "acceptedAnswer": { "@type": "Answer", "text": "The full BRK code is printed only on the physical Certificate of Authenticity. It is not published online in order to protect the owner, the artwork and the integrity of the registry." } },
-          { "@type": "Question", "name": "What does a Brickasso® Certificate of Authenticity confirm?", "acceptedAnswer": { "@type": "Answer", "text": "The certificate confirms that the artwork is an official Brickasso® work by Albert Oprea, signed, numbered, documented and connected to its private BRK Registry entry." } }
+          { "@type": "Question", "name": "What does a Brickasso® Certificate of Authenticity confirm?", "acceptedAnswer": { "@type": "Answer", "text": "The certificate confirms that the artwork is an official Brickasso® work by Albert Oprea, signed, numbered, documented and connected to its private BRK Registry entry." } },
+          { "@type": "Question", "name": "Do Fine Art editions use the BRK Registry?", "acceptedAnswer": { "@type": "Answer", "text": "No. Fine Art editions are separately documented, signed and numbered and are accompanied by a Fine Art Edition Certificate. The original physical artwork retains its own BRK Registry identity and Certificate of Authenticity." } }
         ]
       },
       {
@@ -260,19 +261,7 @@
       .section{padding:0 22px 76px;}
       .grid-block,.chapter-section{padding:54px 0;}
       .verify-card{padding:28px 22px;}
-      .chapter-image{
-        aspect-ratio:auto;
-        background:transparent;
-        box-shadow:none;
-        overflow:visible;
-      }
-      .chapter-image img{
-        width:100%;
-        height:auto;
-        object-fit:contain;
-        object-position:center;
-        box-shadow:0 28px 70px rgba(0,0,0,0.16);
-      }
+      .chapter-image{aspect-ratio:3/4;}
       .chapter-copy p{font-size:0.98rem;line-height:1.75;}
       .closing{padding:76px 22px 68px;}
       .footer-social{gap:18px;}
@@ -342,7 +331,7 @@
       <div class="hero-content">
         <p class="eyebrow">BRK Registry and Certificate</p>
         <h1>Certificate of Authenticity</h1>
-        <p class="hero-subtitle">The official authentication system for every registered Brickasso<span class="reg">®</span> artwork by Albert Oprea.</p>
+        <p class="hero-subtitle">The official authentication system for every registered original Brickasso<span class="reg">®</span> artwork by Albert Oprea.</p>
       </div>
     </section>
 
@@ -416,7 +405,7 @@
           </div>
           <div class="cards-grid">
             <article class="info-card"><h3>Official work</h3><p>The artwork is an official Brickasso<span class="reg">®</span> work by Albert Oprea.</p></article>
-            <article class="info-card"><h3>One of one</h3><p>The registered work is documented as a unique original, not as an edition of the same artwork.</p></article>
+            <article class="info-card"><h3>One of one original</h3><p>The BRK-registered physical artwork is documented as a unique original. Fine Art editions, when released, are documented separately and do not share the original work&apos;s BRK Registry identity.</p></article>
             <article class="info-card"><h3>Signed record</h3><p>The physical certificate supports ownership records, long term provenance and future institutional documentation.</p></article>
           </div>
         </section>
@@ -432,6 +421,7 @@
             <details><summary>What happens when a valid code is entered?</summary><p>The page confirms that the code matches an official registry entry and displays the connected artwork title.</p></details>
             <details><summary>What happens if the code is invalid?</summary><p>The page asks the owner to check the certificate and try again. Codes must be entered in the correct BRK format.</p></details>
             <details><summary>Can a BRK number be reused?</summary><p>No. Each BRK number identifies one registered artwork and remains part of the permanent Brickasso<span class="reg">®</span> chronology.</p></details>
+            <details><summary>Do Fine Art editions use the BRK Registry?</summary><p>No. Fine Art editions are separately documented, signed and numbered and are accompanied by a Fine Art Edition Certificate. The original physical artwork retains its own BRK Registry identity and Certificate of Authenticity.</p></details>
             <details><summary>Does the certificate replace the physical artwork?</summary><p>No. The certificate supports provenance and authenticity. The artwork, signature, registry position and certificate together form the complete documentation.</p></details>
           </div>
         </section>
@@ -507,7 +497,10 @@
       { label:'The Perfection', salt:'Zx4@Lm9!qT2#vHcP', hash:'15201e3463a9944490f8c48823e3c05ecc42f8fbc45eb00fed2a414b285a4e86' },
       { label:'The Legend', salt:'q9L@xF7!vN3#pZsW', hash:'0477e3328d9f7727eb0e69ae9250d1aeb64a3ab261cb5de24d0ccdf005cb49a7' },
       { label:"The Champion's Blade", salt:'$OXp$EYb6OTanjXF', hash:'8db4a7bc6fd56bb1f52dfa96e4a612eacd25ab21a26ab68d74f1548f333da437' },
-      { label:'Kosmos', salt:'L8#vQ2@xRm7!KaPd', hash:'02f0db71e462869860dbc1bf1bd5279a49d67cb7985f5e4d66b051d0b8b8d8f6' }
+      { label:'Kosmos', salt:'L8#vQ2@xRm7!KaPd', hash:'02f0db71e462869860dbc1bf1bd5279a49d67cb7985f5e4d66b051d0b8b8d8f6' },
+      { label:'The Infinite', salt:'R7#kN4@vTp9!MxQa', hash:'85b97a24afde1b11731115abfe0d9ffb9f7a2a22220a4b7d255e190104675e8f' },
+      { label:'Brickasso No. 15', salt:'S5#pL8@xWm3!QrNv', hash:'f131821e416a4f6c418c017c38fe1f3b5f2c9b2e899e2a06ee82051af4463aff' },
+      { label:'911 Turbo S', salt:'T6#vR3@kPn8!WxMq', hash:'8084a093fe0f30293ffe722b004a2f4e5919b41a62722975f2577455fc6e0f98' }
    ];
 
     document.getElementById('verifyForm').addEventListener('submit', async (e)=>{
