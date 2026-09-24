@@ -157,6 +157,22 @@
     },
     {
       "@type": "VisualArtwork",
+      "@id": "https://brickasso.art/the-infinite.html#artwork",
+      "identifier": "BRK-07",
+      "name": "The Infinite",
+      "creator": {
+        "@id": "https://brickasso.art/#albert-oprea"
+      },
+      "artform": "Contemporary art",
+      "artMedium": "LEGO® elements",
+      "url": "https://brickasso.art/the-infinite.html",
+      "description": "An original one of one Brickasso® artwork created in 2026 as a tribute to Constantin Brâncuși.",
+      "isPartOf": {
+        "@id": "https://brickasso.art/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
       "@id": "https://brickasso.art/happysun.html#artwork",
       "identifier": "BRK-08",
       "name": "Happy Sun",
@@ -233,6 +249,101 @@
       "description": "An original commissioned Brickasso® artwork documented in the official catalogue.",
       "isPartOf": {
         "@id": "https://brickasso.art/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.art/brk-15.html#artwork",
+      "identifier": "BRK-15",
+      "name": "Brickasso No. 15",
+      "creator": {
+        "@id": "https://brickasso.art/#albert-oprea"
+      },
+      "artform": "Contemporary art",
+      "artMedium": "LEGO® elements",
+      "url": "https://brickasso.art/brk-15.html",
+      "description": "An original one of one Brickasso® artwork documented in the official catalogue.",
+      "isPartOf": {
+        "@id": "https://brickasso.art/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.art/911-turbo-s.html#artwork",
+      "identifier": "BRK-16",
+      "name": "911 Turbo S",
+      "creator": {
+        "@id": "https://brickasso.art/#albert-oprea"
+      },
+      "artform": "Contemporary art",
+      "artMedium": "LEGO® elements",
+      "url": "https://brickasso.art/911-turbo-s.html",
+      "description": "An original one of one Brickasso® artwork documented in the official catalogue.",
+      "isPartOf": {
+        "@id": "https://brickasso.art/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://brickasso.art/shop.html#shop",
+      "name": "Shop | Brickasso®",
+      "url": "https://brickasso.art/shop.html",
+      "description": "Official Brickasso® shop for Fine Art editions and selected official releases.",
+      "about": {
+        "@id": "https://brickasso.art/#organization"
+      },
+      "hasPart": [
+        {
+          "@id": "https://brickasso.art/fine-art-prints.html#collection"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://brickasso.art/fine-art-prints.html#collection",
+      "name": "Fine Art Prints | Brickasso®",
+      "url": "https://brickasso.art/fine-art-prints.html",
+      "description": "Official Brickasso® Fine Art Prints by Albert Oprea. Strictly limited, signed and numbered editions produced from selected artworks.",
+      "about": {
+        "@id": "https://brickasso.art/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://brickasso.art/shop.html#shop"
+      },
+      "hasPart": [
+        {
+          "@id": "https://brickasso.art/FAP-911-turbo-s.html#artwork"
+        }
+      ]
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.art/FAP-911-turbo-s.html#artwork",
+      "name": "911 Turbo S Fine Art Paper Edition",
+      "creator": {
+        "@id": "https://brickasso.art/#albert-oprea"
+      },
+      "artform": "Fine art print",
+      "artMedium": "Fine Art Paper",
+      "artEdition": "Edition of 12",
+      "width": {
+        "@type": "QuantitativeValue",
+        "value": 87,
+        "unitCode": "CMT"
+      },
+      "height": {
+        "@type": "QuantitativeValue",
+        "value": 144.7,
+        "unitCode": "CMT"
+      },
+      "dateCreated": "2026",
+      "url": "https://brickasso.art/FAP-911-turbo-s.html",
+      "description": "A signed and numbered Brickasso® Fine Art Paper edition derived from the original BRK-16 artwork.",
+      "isBasedOn": {
+        "@id": "https://brickasso.art/911-turbo-s.html#artwork"
+      },
+      "isPartOf": {
+        "@id": "https://brickasso.art/fine-art-prints.html#collection"
       }
     }
   ]
