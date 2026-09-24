@@ -300,4 +300,118 @@
       <image:caption>Brickasso® No. 14 by Albert Oprea, a commissioned one of one artwork in development and recorded as BRK-14.</image:caption>
     </image:image>
   </url>
+
+  <url>
+    <loc>https://brickasso.art/the-infinite.html</loc>
+    <image:image>
+      <image:loc>https://brickasso.art/the-infinite-preview.jpg</image:loc>
+      <image:title>The Infinite | Brickasso® No. 07</image:title>
+      <image:caption>The Infinite by Albert Oprea, recorded in the Brickasso® Registry as BRK-07.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://brickasso.art/the-infinite-hero.webp</image:loc>
+      <image:title>The Infinite | Brickasso® No. 07</image:title>
+      <image:caption>The Infinite by Albert Oprea, created in 2026 as a tribute to Constantin Brâncuși.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://brickasso.art/the-infinite-front.webp</image:loc>
+      <image:title>The Infinite | Brickasso® No. 07</image:title>
+      <image:caption>Front view of The Infinite, Brickasso® No. 07.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://brickasso.art/brk-15.html</loc>
+    <image:image>
+      <image:loc>https://brickasso.art/the-sneaker-preview.jpg</image:loc>
+      <image:title>Brickasso No. 15 | BRK-15</image:title>
+      <image:caption>Brickasso No. 15 by Albert Oprea, recorded in the Brickasso® Registry as BRK-15.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://brickasso.art/the-sneaker-hero.webp</image:loc>
+      <image:title>Brickasso No. 15 | BRK-15</image:title>
+      <image:caption>Brickasso No. 15 by Albert Oprea.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://brickasso.art/the-sneaker-front.webp</image:loc>
+      <image:title>Brickasso No. 15 | BRK-15</image:title>
+      <image:caption>Front view of Brickasso No. 15, BRK-15.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://brickasso.art/911-turbo-s.html</loc>
+    <image:image>
+      <image:loc>https://brickasso.art/911-turbo-s-preview.jpg</image:loc>
+      <image:title>911 Turbo S | Brickasso® No. 16</image:title>
+      <image:caption>911 Turbo S by Albert Oprea, recorded in the Brickasso® Registry as BRK-16.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://brickasso.art/911-turbo-s-hero.webp</image:loc>
+      <image:title>911 Turbo S | Brickasso® No. 16</image:title>
+      <image:caption>911 Turbo S by Albert Oprea.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://brickasso.art/911-turbo-s-front.webp</image:loc>
+      <image:title>911 Turbo S | Brickasso® No. 16</image:title>
+      <image:caption>Front view of 911 Turbo S, BRK-16.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://brickasso.art/shop.html</loc>
+    <image:image>
+      <image:loc>https://brickasso.art/shop-preview.jpg</image:loc>
+      <image:title>Shop | Brickasso®</image:title>
+      <image:caption>Brickasso® Shop for Fine Art editions and selected official releases.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://brickasso.art/shop-hero.webp</image:loc>
+      <image:title>Shop | Brickasso®</image:title>
+      <image:caption>Brickasso® Shop.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://brickasso.art/shop-fine-art-prints.webp</image:loc>
+      <image:title>Brickasso® Fine Art Prints</image:title>
+      <image:caption>Brickasso® Fine Art Prints collection.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://brickasso.art/shop-merchandise.webp</image:loc>
+      <image:title>Brickasso® Merchandise</image:title>
+      <image:caption>Selected Brickasso® objects and apparel.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://brickasso.art/fine-art-prints.html</loc>
+    <image:image>
+      <image:loc>https://brickasso.art/fine-art-prints-preview.jpg</image:loc>
+      <image:title>Fine Art Prints | Brickasso®</image:title>
+      <image:caption>Signed and numbered Brickasso® Fine Art editions.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://brickasso.art/fine-art-prints-hero.webp</image:loc>
+      <image:title>Fine Art Prints | Brickasso®</image:title>
+      <image:caption>Brickasso® Fine Art Prints collection.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://brickasso.art/911-turbo-s-fap-paper-roll.webp</image:loc>
+      <image:title>911 Turbo S Fine Art Print</image:title>
+      <image:caption>911 Turbo S Fine Art Paper edition.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://brickasso.art/FAP-911-turbo-s.html</loc>
+    <image:image>
+      <image:loc>https://brickasso.art/911-turbo-s-preview.jpg</image:loc>
+      <image:title>911 Turbo S Fine Art Print | Brickasso®</image:title>
+      <image:caption>Signed and numbered Fine Art edition derived from BRK-16.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://brickasso.art/911-turbo-s-fap-wall.webp</image:loc>
+      <image:title>911 Turbo S Fine Art Print | Brickasso®</image:title>
+      <image:caption>911 Turbo S Fine Art Print displayed at original 1:1 scale.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://brickasso.art/911-turbo-s-fap-paper-roll.webp</image:loc>
+      <image:title>911 Turbo S Fine Art Paper Edition</image:title>
+      <image:caption>Fine Art Paper presentation for the 911 Turbo S edition.</image:caption>
+    </image:image>
+  </url>
 </urlset>
