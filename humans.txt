@@ -11,11 +11,14 @@ Social: https://x.com/brickasso_art
 Purpose: Permanent digital archive of the Brickasso® artistic practice.
 Language: English
 Standards: HTML, CSS, Schema.org, Open Graph, Twitter Cards, XML Sitemap, Web App Manifest
-Main sections: Home, Gallery, About, Portfolio, Catalogue, Certificate, Contact
+Main navigation: Home, Gallery, About, Portfolio, Catalogue, Certificate, Contact, Shop
+Fine Art editions: https://brickasso.art/fine-art-prints.html
 Catalogue principle: Chronological archive. BRK numbers are permanent and are not reused.
 
 /* ARTISTIC PRACTICE */
-Brickasso® artworks are original one of one artworks built through LEGO® elements.
+Registered Brickasso® artworks are original one of one physical artworks built through LEGO® elements.
+Selected artworks may also be released separately as signed and numbered Fine Art editions with separate edition documentation.
+Fine Art editions do not replace or inherit the BRK Registry identity of the original physical artwork.
 The website documents concept, chronology, authenticity, provenance context, hidden narratives, sculptural relief and artistic evolution.
 
 /* COPYRIGHT */
