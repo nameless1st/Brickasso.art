@@ -261,7 +261,19 @@
       .section{padding:0 22px 76px;}
       .grid-block,.chapter-section{padding:54px 0;}
       .verify-card{padding:28px 22px;}
-      .chapter-image{aspect-ratio:3/4;}
+      .chapter-image{
+        aspect-ratio:auto;
+        background:transparent;
+        box-shadow:none;
+        overflow:visible;
+      }
+      .chapter-image img{
+        width:100%;
+        height:auto;
+        object-fit:contain;
+        object-position:center;
+        box-shadow:0 28px 70px rgba(0,0,0,0.16);
+      }
       .chapter-copy p{font-size:0.98rem;line-height:1.75;}
       .closing{padding:76px 22px 68px;}
       .footer-social{gap:18px;}
@@ -430,9 +442,7 @@
 
     <section class="closing" aria-label="Continue">
       <div class="closing-inner">
-        <h2>Every registered work<br>
-           has a place in the<br>
-          Brickasso<span class="reg">®</span> chronology.</h2>
+        <h2>Every registered work has a place<br>in the Brickasso<span class="reg">®</span> chronology.</h2>
         <a href="catalogue.html" class="button light">Continue to Catalogue</a>
       </div>
     </section>
