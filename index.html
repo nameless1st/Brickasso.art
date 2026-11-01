@@ -10,6 +10,9 @@
   <meta name="author" content="Albert Oprea" />
   <meta name="theme-color" content="#0f1113" />
   <link rel="canonical" href="https://brickasso.art/" />
+  <link rel="alternate" hreflang="en" href="https://brickasso.art/" />
+  <link rel="alternate" hreflang="ro-RO" href="https://brickasso.ro/" />
+  <link rel="alternate" hreflang="x-default" href="https://brickasso.art/" />
 
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
@@ -39,9 +42,8 @@
   <link rel="manifest" href="./site.webmanifest" />
   <meta name="msapplication-TileImage" content="./mstile-150x150.png" />
   <meta name="msapplication-TileColor" content="#0f1113" />
-  <link rel="preload" as="image" href="./home.webp" type="image/webp" />
+  <link rel="preload" as="image" href="./home.webp" type="image/webp" media="not ((orientation: portrait) and (max-width: 1100px))" />
   <link rel="preload" as="image" href="./home-mobile.webp" type="image/webp" media="(orientation: portrait) and (max-width: 1100px)" />
-  <link rel="preload" as="image" href="./preview-social.jpg" type="image/jpeg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,12 +70,7 @@
       "publisher": {
         "@id": "https://brickasso.art/#organization"
       },
-      "inLanguage": "en",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://brickasso.art/catalogue.html",
-        "query-input": "required name=search_term_string"
-      }
+      "inLanguage": "en"
     },
     {
       "@type": "Organization",
@@ -1139,7 +1136,7 @@
   <main class="scene">
     <picture class="background-wrap">
       <source srcset="./home-mobile.webp" media="(orientation: portrait) and (max-width: 1100px)">
-      <img src="./home.webp" alt="The White Horse by Brickasso®" class="background">
+      <img src="./home.webp" alt="The White Horse by Brickasso®" class="background" fetchpriority="high" decoding="async">
     </picture>
 
     <div class="overlay"></div>
@@ -1155,9 +1152,9 @@
       <a href="shop.html">Shop</a>
     </nav>
 
-    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Open menu">MENU</button>
+    <button type="button" class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">MENU</button>
 
-    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile main menu">
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile main menu" aria-hidden="true" inert>
       <a href="index.html" class="active" onclick="toggleMobileMenu()">Home</a>
       <a href="gallery.html" onclick="toggleMobileMenu()">Gallery</a>
       <a href="about.html" onclick="toggleMobileMenu()">About</a>
@@ -1210,17 +1207,36 @@
   </main>
 
   <script>
+    const mobileMenu = document.getElementById("mobileMenu");
+    const mobileMenuButton = document.querySelector(".mobile-menu-btn");
+
+    function setMobileMenu(open) {
+      mobileMenu.classList.toggle("active", open);
+      mobileMenuButton.setAttribute("aria-expanded", String(open));
+      mobileMenuButton.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      mobileMenu.setAttribute("aria-hidden", String(!open));
+      mobileMenu.inert = !open;
+    }
+
     function toggleMobileMenu() {
-      document.getElementById("mobileMenu").classList.toggle("active");
+      setMobileMenu(!mobileMenu.classList.contains("active"));
     }
 
     document.addEventListener("click", function(event) {
-      const menu = document.getElementById("mobileMenu");
-      const button = document.querySelector(".mobile-menu-btn");
-
-      if (!menu.contains(event.target) && !button.contains(event.target)) {
-        menu.classList.remove("active");
+      if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+        setMobileMenu(false);
       }
+    });
+
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "Escape" && mobileMenu.classList.contains("active")) {
+        setMobileMenu(false);
+        mobileMenuButton.focus();
+      }
+    });
+
+    window.addEventListener("resize", function() {
+      if (window.innerWidth > 1100) setMobileMenu(false);
     });
   </script>
 </body>
