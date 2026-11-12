@@ -17,6 +17,19 @@ const message=v=>{feedback.textContent=v;};
 const payload=()=>Object.fromEntries(new FormData(f).entries());
 const sig=v=>JSON.stringify(v);
 const countries={RO:'Romania',AT:'Austria',BE:'Belgium',DK:'Denmark',EE:'Estonia',FI:'Finland',FR:'France',DE:'Germany',IT:'Italy',LV:'Latvia',LT:'Lithuania',LU:'Luxembourg',NL:'Netherlands',PT:'Portugal',ES:'Spain',SE:'Sweden'};
+// Populate the delivery countries independently of PayPal or API availability.
+const countrySelect=f.elements.namedItem('country');
+function renderCountries(allowed){
+ const selected=countrySelect.value;
+ const supported=Array.isArray(allowed)&&allowed.length?allowed:Object.keys(countries);
+ countrySelect.replaceChildren(new Option('Select country',''));
+ for(const code of supported){
+  if(!Object.prototype.hasOwnProperty.call(countries,code))continue;
+  countrySelect.add(new Option(countries[code],code));
+ }
+ if(supported.includes(selected))countrySelect.value=selected;
+}
+renderCountries(Object.keys(countries));
 async function api(path,data){
   const response=await fetch(API_BASE+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),cache:'no-store'});
   const json=await response.json().catch(()=>({}));
@@ -99,8 +112,7 @@ async function load(){
   const response=await fetch(API_BASE+'public-config.php',{cache:'no-store'});
   if(!response.ok)throw new Error('Public configuration unavailable.');
   configuration=await response.json();
-  const sel=f.country;
-  for(const code of configuration.countries){const opt=document.createElement('option');opt.value=code;opt.textContent=countries[code]||code;sel.appendChild(opt);}
+  if(Array.isArray(configuration.countries) && configuration.countries.length){renderCountries(configuration.countries);}
   if(configuration.mode==='sandbox')document.getElementById('sandbox').hidden=false;
   if(!configuration.enabled){message('Payments are not active yet. You can still calculate shipping.');return;}
   const script=document.createElement('script');
@@ -108,7 +120,7 @@ async function load(){
   script.onload=setup;
   script.onerror=()=>message('Could not load PayPal.');
   document.head.appendChild(script);
- }catch(e){quoteBtn.disabled=true;message('Checkout is not configured yet.');}
+ }catch(e){message('Payment service is temporarily unavailable. Shipping countries remain selectable.');}
 }
 quoteBtn.addEventListener('click',async()=>{
  if(!f.reportValidity())return;
@@ -120,7 +132,7 @@ quoteBtn.addEventListener('click',async()=>{
   document.getElementById('shipping').textContent=format(q.shipping);
   document.getElementById('total').textContent=format(q.total);
   payArea.hidden=!initialized;
-  message(configuration.enabled && initialized?'Choose card or PayPal to complete your order.':'Shipping calculated. Payments are currently unavailable.');
+  message(configuration?.enabled && initialized?'Choose card or PayPal to complete your order.':'Shipping calculated. Payments are currently unavailable.');
  }catch(e){invalidate();message(e.message);}finally{quoteBtn.disabled=false;}
 });
 paypalBtn.addEventListener('click',async()=>{
