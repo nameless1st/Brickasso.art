@@ -7,10 +7,8 @@ const quoteBtn=document.getElementById('quoteBtn');
 const payArea=document.getElementById('payArea');
 const paypalArea=document.getElementById('paypalArea');
 const paypalBtn=document.getElementById('paypalBtn');
-const cardArea=document.getElementById('cardArea');
-const cardBtn=document.getElementById('cardBtn');
 let latestPayload=null, latestSignature=null, configuration=null;
-let paypalSession=null, guestSession=null, initialized=false;
+let paypalSession=null, initialized=false;
 let activeOrderId=null, paymentApproved=false, starting=false, completedRef=null;
 const format=v=>'€'+Number(v).toFixed(2);
 const message=v=>{feedback.textContent=v;};
@@ -80,7 +78,7 @@ async function setup(){
  try{
   const sdk=await window.paypal.createInstance({
    clientId:configuration.clientId,
-   components:['paypal-payments','paypal-guest-payments'],
+   components:['paypal-payments'],
    pageType:'checkout'
   });
   const eligibility=await sdk.findEligibleMethods({currencyCode:'EUR'});
@@ -93,17 +91,7 @@ async function setup(){
    paypalArea.hidden=false;
    paypalBtn.hidden=false;
   }
-  if(eligibility.isEligible('card') && typeof sdk.createPayPalGuestOneTimePaymentSession==='function'){
-   guestSession=await sdk.createPayPalGuestOneTimePaymentSession({
-    onApprove:captureApproved,
-    onComplete:completed,
-    onCancel:()=>{if(!paymentApproved){message('Card payment cancelled.');reservationCancel();}},
-    onError:()=>message('Card payment could not be completed. Check the payment status before retrying.'),
-    onWarn:d=>message(d.message||'Please check your card details and try again.')
-   });
-   cardArea.hidden=false;
-  }
-  initialized=Boolean(paypalSession||guestSession);
+  initialized=Boolean(paypalSession);
   if(!initialized)message('Payment methods are not available for this merchant or region.');
  }catch(e){message('Payment methods could not be initialized.');}
 }
@@ -132,7 +120,7 @@ quoteBtn.addEventListener('click',async()=>{
   document.getElementById('shipping').textContent=format(q.shipping);
   document.getElementById('total').textContent=format(q.total);
   payArea.hidden=!initialized;
-  message(configuration?.enabled && initialized?'Choose card or PayPal to complete your order.':'Shipping calculated. Payments are currently unavailable.');
+  message(configuration?.enabled && initialized?'Pay securely with PayPal. Card payment without an account may be offered in the PayPal window.':'Shipping calculated. Payments are currently unavailable.');
  }catch(e){invalidate();message(e.message);}finally{quoteBtn.disabled=false;}
 });
 paypalBtn.addEventListener('click',async()=>{
@@ -140,13 +128,6 @@ paypalBtn.addEventListener('click',async()=>{
  try{
   const order=await createOrder();
   await paypalSession.start({presentationMode:'auto'},Promise.resolve(order));
- }catch(e){message(e.message);}
-});
-cardBtn.addEventListener('click',async()=>{
- if(!guestSession)return;
- try{
-  const order=await createOrder();
-  await guestSession.start({presentationMode:'auto',targetElement:cardBtn},Promise.resolve(order));
  }catch(e){message(e.message);}
 });
 const params=new URLSearchParams(location.search);
