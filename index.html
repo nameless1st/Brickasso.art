@@ -1190,30 +1190,35 @@
         max-width:100%;
       }
 
+      /* Compact and centered between the subtitle and the artwork. */
       .title-cta-row{
-        margin-top:15px;
-        gap:9px;
+        margin-top:14px;
+        gap:7px;
+        width:100%;
+        align-items:center;
       }
 
       .title-block .gallery-cta{
-        width:min(290px, 88vw);
+        width:min(238px, 68vw);
         min-width:0;
-        min-height:44px;
-        padding:11px 13px;
-        font-size:11px;
-        letter-spacing:1.35px;
+        min-height:35px;
+        padding:7px 11px;
+        font-size:9.2px;
+        line-height:1.2;
+        letter-spacing:1.05px;
+        white-space:nowrap;
       }
 
       .title-block .gallery-cta::after{
-        margin-left:10px;
-        font-size:14px;
+        margin-left:9px;
+        font-size:12px;
       }
     }
 
     @media (max-width: 600px) and (max-height: 680px) and (orientation: portrait){
       .title-block{top:70px;}
-      .title-cta-row{margin-top:11px;gap:7px;}
-      .title-block .gallery-cta{min-height:40px;padding:9px 12px;}
+      .title-cta-row{margin-top:10px;gap:6px;}
+      .title-block .gallery-cta{min-height:33px;padding:6px 10px;}
     }
 
   </style>
