@@ -1146,6 +1146,76 @@
       }
     }
 
+
+    /* Phone portrait only. Desktop and tablet styles are preserved. */
+    @media (max-width: 600px) and (orientation: portrait){
+      .mobile-menu-btn{
+        top:14px;
+        right:14px;
+        padding:10px 15px;
+        border-radius:15px;
+        font-size:12px;
+      }
+
+      .mobile-menu{
+        top:63px;
+        right:14px;
+      }
+
+      .title-block{
+        top:82px;
+        left:50%;
+        width:calc(100% - 32px);
+        transform:translateX(-50%);
+        opacity:1;
+        animation:none;
+      }
+
+      .brand{
+        font-size:clamp(2rem, 9vw, 2.45rem);
+        line-height:1;
+        letter-spacing:-0.7px;
+      }
+
+      .name{
+        font-size:clamp(2.15rem, 9.3vw, 2.6rem);
+        line-height:1;
+        margin:2px 0 8px;
+      }
+
+      .tag{
+        display:block;
+        font-size:clamp(0.70rem, 3.15vw, 0.83rem);
+        line-height:1.25;
+        max-width:100%;
+      }
+
+      .title-cta-row{
+        margin-top:15px;
+        gap:9px;
+      }
+
+      .title-block .gallery-cta{
+        width:min(290px, 88vw);
+        min-width:0;
+        min-height:44px;
+        padding:11px 13px;
+        font-size:11px;
+        letter-spacing:1.35px;
+      }
+
+      .title-block .gallery-cta::after{
+        margin-left:10px;
+        font-size:14px;
+      }
+    }
+
+    @media (max-width: 600px) and (max-height: 680px) and (orientation: portrait){
+      .title-block{top:70px;}
+      .title-cta-row{margin-top:11px;gap:7px;}
+      .title-block .gallery-cta{min-height:40px;padding:9px 12px;}
+    }
+
   </style>
 </head>
 <body>
